@@ -35,3 +35,10 @@
   background-color: #666;
   color: white;
 }
+
+.toucharea{
+  width: 30%;
+  height: 300px;
+  margin-left: 35%;
+  border: 2px solid black;
+}

@@ -1,12 +1,24 @@
-var source = fetch("./people.json");
-console.log(JSON.stringify(source));
+const person = [
+      {
+      name:"Brad",
+      skills: ["python","java"]
+    },
+    {
+      name: "John",
+      skills: ["python","javascript"]
+    },
+    {
+      name: "Sara",
+      skills: ["javascript","html"]
+    }
+  ]
 
-
+for (i = 0; i < person.length; i++)
+  console.log(person[i].skills);
 
 var mark = ["python","java"]
 //var neil = ["python","javascript"]
 
-var empty = []
 
 //function check() {
 //      for(i = 0; container.vehicle1.length; i++){
@@ -17,27 +29,25 @@ var empty = []
 //       }
 //     }
 //   }
-var selectArray = [];
 
-document.getElementById('btn').addEventListener('click', function () {
+
+document.getElementById('btn').addEventListener('click', function (evt) {
+  var selectArray = [];
+  var empty = [];
+    evt.preventDefault();
     var theForm = document.getElementById( 'myBtnContainer' );
 //initialise empty array
     for (i = 0; i < theForm.vehicle1.length; i++) {
         if(theForm.vehicle1[i].type == 'checkbox'){
              if(theForm.vehicle1[i].checked == true){
                 selectArray.push(theForm.vehicle1[i].value);
-
              }
          }
-    }validate()
-}, false);
+    }  for (i = 0; i < selectArray.length; i++);
+        var empty = [];
+        for (i = 0; i < person.length; i++)
 
-function validate(){
-for (i = 0; i < selectArray.length; i++);
-  if (selectArray.indexOf(mark[i])){
-    empty.push(mark[i]);
-    alert(mark);
-}else{
-  alert('not working')
-}
-}
+        if (selectArray.some(c => person[i].skills.includes(c))){
+          empty.push(person[i].name, person[i].skills);
+      }document.querySelector('.toucharea').innerHTML = empty;
+});
