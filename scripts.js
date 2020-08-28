@@ -1,22 +1,26 @@
 const person = [
       {
-      name:"Brad",
-      skills: ["python","java"]
+      name:"Brad ",
+      skills: ["python ","java "]
     },
     {
-      name: "John",
-      skills: ["python","javascript"]
+      name: "John ",
+      skills: ["python ","javascript "]
     },
     {
       name: "Sara",
-      skills: ["javascript","html"]
+      skills: ["javascript ","html "]
+    },
+    {
+      name: "Jones ",
+      skills: ["SQL ","R "]
     }
   ]
 
 for (i = 0; i < person.length; i++)
   console.log(person[i].skills);
 
-var mark = ["python","java"]
+var mark = ["python ","java "]
 //var neil = ["python","javascript"]
 
 
@@ -48,6 +52,22 @@ document.getElementById('btn').addEventListener('click', function (evt) {
         for (i = 0; i < person.length; i++)
 
         if (selectArray.some(c => person[i].skills.includes(c))){
-          empty.push(person[i].name, person[i].skills);
-      }document.querySelector('.toucharea').innerHTML = empty;
+          empty.push(person[i]);
+
+      }
+      for (i = 0; i < empty.length; i++){
+        let div = document.createElement('div');
+        div.id = 'content';
+        div.class = 'note';
+
+// create a new heading and add it to the div
+        let name = document.createElement('h5');
+        name.textContent = empty[i].name + '\n' + empty[i].skills;
+        div.appendChild(name);
+
+// add div to the document
+        document.body.appendChild(div);
+        div.style.textAlign = "center";
+        div.style.border = "thick solid #0000FF";
+        div.style.margin = "2% 10% 2% 10%";}
 });
