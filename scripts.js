@@ -71,3 +71,15 @@ document.getElementById('btn').addEventListener('click', function (evt) {
         div.style.border = "thick solid #0000FF";
         div.style.margin = "2% 10% 2% 10%";}
 });
+
+function run(){
+  var boxes = document.getElementsByClassName("checkbox");
+  var classes = document.getElementsByClassName("checklabel");
+  for (i = 0; i < boxes.length; i++){
+    if(boxes[i].checked == true){
+      classes[i].style.backgroundColor = "yellow";
+    }else{
+      classes[i].style.backgroundColor = "blue";
+    }
+  }
+}

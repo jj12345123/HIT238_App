@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="Skill Matching App" content="This app is for student use.">
+    <meta name="viewport">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+      <a href="index.html" class="arrowLeft">Arrow</a>
+      <h2>Select Criteria</h2>
+
+      <h3>Number of teams worked with</h3>
+      <div class="criterias">
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">0 - 5</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">5 - 10</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">10 + </button>
+      </div>
+
+      <h3>Organisational Skills</h3>
+      <div class="criterias criterias2">
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">Time-<br>Management</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">Leadership</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">Motivating</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">Conflict-<br>Management</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">Delegating</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">Goal-Setting</button>
+      </div>
+
+      <h3>Year Level</h3>
+      <div class="criterias criterias2">
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">1st Year<br>Undergrad</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">2nd Year<br>Undergrad</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">3rd Year<br>Undergrad</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">4th Year<br>Undergrad</button>
+          <button class="criteriaButton" type="submit" onclick="window.location.href = 'criteria.html'">1st Year<br>Masters</button>
+          <button class="criteriaButton" type="submit">1st Year<br>Masters</button>
+      </div>
+
+      <h3>Availability</h3>
+      <div class="criterias criterias2">
+          <div class="formrow">
+            <input class="checkbox" type="checkbox" name="check1" id="check1" onclick="run()">
+            <label class="checklabel" for="check1">Morning</label>
+          </div>
+          <div class="formrow">
+            <input class="checkbox" type="checkbox" name="check2" id="check2" onclick="run()">
+            <label class="checklabel" for="check2">Day</label>
+          </div>
+          <div class="formrow">
+            <input class="checkbox" type="checkbox" name="check3" id="check3" onclick="run()">
+            <label class="checklabel" for="check3"><br><br><br><br>Evening</label>
+          </div>
+      </div>
+
+      <a href="skills.html" class="arrowRight">Arrow</a>
+
+    </body>
+  <script src="scripts.js"></script>
+</html>
