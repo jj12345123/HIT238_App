@@ -155,7 +155,7 @@ function loadResults(){
   var area = sessionStorage.getItem("area", areaList);
   var criteria = sessionStorage.getItem("criteria", criteriaList);
   for (i = 0; i < person.length; i++){
-    if ((area.every(r => person[i].area.includes(r))){
+    if (area.every(r => person[i].area.includes(r))){
       let div = document.createElement('div');
       div.id = 'content';
       div.class = 'note';
@@ -171,5 +171,4 @@ function loadResults(){
       div.style.border = "thick solid #0000FF";
       div.style.margin = "2% 10% 2% 10%";}
     }
-  }
 }
