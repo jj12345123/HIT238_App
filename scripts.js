@@ -1,19 +1,23 @@
 const person = [
       {
       name:"Brad ",
-      skills: ["python ","java "]
+      skills: ["python ","java "],
+      area: "IT"
     },
     {
       name: "John ",
-      skills: ["python ","javascript "]
+      skills: ["python ","javascript "],
+      area: "Engineering"
     },
     {
       name: "Sara",
-      skills: ["javascript ","html "]
+      skills: ["javascript ","html "],
+      area: "Environment"
     },
     {
       name: "Jones ",
-      skills: ["SQL ","R "]
+      skills: ["SQL ","R "],
+      area: "Marketing"
     }
   ]
 
@@ -72,14 +76,71 @@ document.getElementById('btn').addEventListener('click', function (evt) {
         div.style.margin = "2% 10% 2% 10%";}
 });
 
+var peopleByArea = [];
+function areaCheck(){
+  var areaList = [];
+  var peopleList = [];
+  var areas = document.getElementsByClassName("areabox");
+  for (i = 0; i < areas.length; i++){
+    if(areas[i].checked == true){
+      areaList.push(areas[i].name);
+    }
+  }for (i = 0; i < person.length; i++){
+    if(person[i].area == areaList){
+      peopleList.push(person[i]);
+    }
+  }
+  var peopleByArea = peopleList;
+  sessionStorage.setItem("people", peopleByArea);
+  sessionStorage.setItem("area", areaList);
+  window.location.href = "criteria.html";
+}
+
 function run(){
   var boxes = document.getElementsByClassName("checkbox");
   var classes = document.getElementsByClassName("checklabel");
+  var peopleByArea = sessionStorage.getItem("people", peopleByArea);
+  var areaList = sessionStorage.getItem("area", areaList);
+  alert(peopleByArea);
   for (i = 0; i < boxes.length; i++){
     if(boxes[i].checked == true){
-      classes[i].style.backgroundColor = "yellow";
+      classes[i].style.backgroundColor = "#0000FF";
     }else{
-      classes[i].style.backgroundColor = "blue";
+      classes[i].style.backgroundColor = "rgb(1, 179, 96)";
     }
+  }
+}
+
+function move(){
+  var areaList = sessionStorage.getItem("area", areaList);
+  alert(areaList);
+  if(areaList = "IT"){
+    window.location.href = "it.html";
+  }if(areaList = "Engineering"){
+    window.location.href = "engineering.html";
+  }if(areaList = "Environment"){
+    window.location.href = "environment.html";
+  }if(areaList = "Marketing"){
+    window.location.href = "marketing.html";
+  }if(areaList = "Finance"){
+    window.location.href = "finance.html";
+  }if(areaList = "Management"){
+    window.location.href = "management.html";
+  }if(areaList = "HealthScience"){
+    window.location.href = "healthScience.html";
+  }if(areaList = "Medicine"){
+    window.location.href = "medicine.html";
+  }if(areaList = "Logistics"){
+    window.location.href = "logistics.html";
+  }if(areaList = "Psychology"){
+    window.location.href = "psychology.html";
+  }if(areaList = "Architecture"){
+    window.location.href = "architecture.html";
+  }if(areaList = "CRM"){
+    window.location.href = "crm.html";
+  }if(areaList = "Physics"){
+    window.location.href = "physics.html";
+  }if(areaList = "Arts"){
+    window.location.href = "arts.html";
   }
 }

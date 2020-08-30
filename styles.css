@@ -64,9 +64,11 @@ h3{
   color: rgb(230,230,230);
   text-align: center;
   height: 100%;
+  font-size: 280%;
 }
 
-.checkbox {
+.checkbox,
+.areabox {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
