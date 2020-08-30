@@ -1,4 +1,5 @@
-.areas{
+.areas,
+.itSkills{
   display: grid;
   grid-template-columns: 40% 40%;
   grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
@@ -12,10 +13,6 @@
   border-radius: 2rem;
   border-style: none;
   color: rgb(230,230,230);
-}
-
-.criteriaButton:active{
-  background-color: yellow;
 }
 
 .areaButton{
@@ -48,7 +45,8 @@ h3{
   margin-left: 10%
 }
 
-.criterias2{
+.criterias2,
+.results{
   display: grid;
   grid-template-columns: 28% 28% 28%;
   grid-template-rows: 150px 150px;
@@ -56,7 +54,8 @@ h3{
   margin-left: 10%
 }
 
-.checklabel {
+.checklabel,
+.resultslabel {
   display:block;
   background-color:rgb(1, 179, 96);
   border-radius: 2rem;
@@ -64,11 +63,16 @@ h3{
   color: rgb(230,230,230);
   text-align: center;
   height: 100%;
-  font-size: 280%;
+  font-size: 380%;
+}
+
+.resultslabel{
+  background-color: orange;
 }
 
 .checkbox,
-.areabox {
+.areabox,
+.resultsbutton{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;

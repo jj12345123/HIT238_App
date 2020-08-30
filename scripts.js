@@ -1,23 +1,35 @@
 const person = [
       {
-      name:"Brad ",
-      skills: ["python ","java "],
-      area: "IT"
+      name:"Brad",
+      area: "it",
+      teams: "zero",
+      organisationalskills: ["leadership","motivating"],
+      level: "2nd",
+      availability: ["morning","day"],
+      skills: ["python","javascript"],
+      phone: "0123456789",
+      email: "test.email"
     },
     {
-      name: "John ",
-      skills: ["python ","javascript "],
-      area: "Engineering"
+      name: "John",
+      skills: ["python","javascript"],
+      area: "engineering",
+      phone: "0123456789",
+      email: "test.email"
     },
     {
       name: "Sara",
-      skills: ["javascript ","html "],
-      area: "Environment"
+      skills: ["javascript","html"],
+      area: "environment",
+      phone: "0123456789",
+      email: "test.email"
     },
     {
-      name: "Jones ",
-      skills: ["SQL ","R "],
-      area: "Marketing"
+      name: "Jones",
+      skills: ["SQL","R"],
+      area: "marketing",
+      phone: "0123456789",
+      email: "test.email"
     }
   ]
 
@@ -112,35 +124,52 @@ function run(){
 }
 
 function move(){
+  var criteriaList = [];
+  var criteria = document.getElementsByClassName('criteriabox');
+  for (i = 0; i < criteria.length; i++){
+    if(criteria[i].checked == true){
+      criteriaList.push(criteria[i].name);
+    }
+  }
+  sessionStorage.setItem("criteria", criteriaList);
   var areaList = sessionStorage.getItem("area", areaList);
-  alert(areaList);
-  if(areaList = "IT"){
-    window.location.href = "it.html";
-  }if(areaList = "Engineering"){
-    window.location.href = "engineering.html";
-  }if(areaList = "Environment"){
-    window.location.href = "environment.html";
-  }if(areaList = "Marketing"){
-    window.location.href = "marketing.html";
-  }if(areaList = "Finance"){
-    window.location.href = "finance.html";
-  }if(areaList = "Management"){
-    window.location.href = "management.html";
-  }if(areaList = "HealthScience"){
-    window.location.href = "healthScience.html";
-  }if(areaList = "Medicine"){
-    window.location.href = "medicine.html";
-  }if(areaList = "Logistics"){
-    window.location.href = "logistics.html";
-  }if(areaList = "Psychology"){
-    window.location.href = "psychology.html";
-  }if(areaList = "Architecture"){
-    window.location.href = "architecture.html";
-  }if(areaList = "CRM"){
-    window.location.href = "crm.html";
-  }if(areaList = "Physics"){
-    window.location.href = "physics.html";
-  }if(areaList = "Arts"){
-    window.location.href = "arts.html";
+  areaList += ".html"
+  window.location.href = areaList;
+}
+
+function resultsCheck(){
+  var skillList = [];
+  var skills = document.getElementsByClassName('skillbox');
+  for (i = 0; i < skills.length; i++){
+    if(skills[i].checked == true){
+      skillList.push(skills[i].name);
+    }
+  }
+  sessionStorage.setItem("skill", skillList);
+  window.location.href = "results.html";
+}
+
+// Continue here!
+function loadResults(){
+  var skill = sessionStorage.getItem("skill", skillList);
+  var area = sessionStorage.getItem("area", areaList);
+  var criteria = sessionStorage.getItem("criteria", criteriaList);
+  for (i = 0; i < person.length; i++){
+    if ((area.every(r => person[i].area.includes(r))){
+      let div = document.createElement('div');
+      div.id = 'content';
+      div.class = 'note';
+
+// create a new heading and add it to the div
+      let name = document.createElement('h5');
+      name.textContent = person[i].name + '\n' + person[i].phone + '\n' + person[i].email;
+      div.appendChild(name);
+
+// add div to the document
+      document.body.appendChild(div);
+      div.style.textAlign = "center";
+      div.style.border = "thick solid #0000FF";
+      div.style.margin = "2% 10% 2% 10%";}
+    }
   }
 }
