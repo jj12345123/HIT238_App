@@ -6,27 +6,34 @@ const person = [
       organisationalskills: ["leadership","motivating"],
       level: "2nd",
       availability: ["morning","day"],
-      skills: ["python","javascript"],
+      skills: [" python"," javascript"],
       phone: "0123456789",
       email: "test.email"
     },
     {
       name: "John",
-      skills: ["python","javascript"],
+      skills: [" python"," javascript"],
       area: "engineering",
       phone: "0123456789",
       email: "test.email"
     },
     {
       name: "Sara",
-      skills: ["javascript","html"],
+      skills: [" javascript"," html"],
       area: "environment",
       phone: "0123456789",
       email: "test.email"
     },
     {
       name: "Jones",
-      skills: ["SQL","R"],
+      skills: [" SQL"," R"],
+      area: "marketing",
+      phone: "0123456789",
+      email: "test.email"
+    },
+    {
+      name: "Helmut",
+      skills: [" python"],
       area: "marketing",
       phone: "0123456789",
       email: "test.email"
@@ -111,9 +118,18 @@ function areaCheck(){
 function run(){
   var boxes = document.getElementsByClassName("checkbox");
   var classes = document.getElementsByClassName("checklabel");
-  var peopleByArea = sessionStorage.getItem("people", peopleByArea);
-  var areaList = sessionStorage.getItem("area", areaList);
-  alert(peopleByArea);
+  for (i = 0; i < boxes.length; i++){
+    if(boxes[i].checked == true){
+      classes[i].style.backgroundColor = "#0000FF";
+    }else{
+      classes[i].style.backgroundColor = "rgb(1, 179, 96)";
+    }
+  }
+}
+
+function skillCheck(){
+  var boxes = document.getElementsByClassName("skillbox");
+  var classes = document.getElementsByClassName("checklabel");
   for (i = 0; i < boxes.length; i++){
     if(boxes[i].checked == true){
       classes[i].style.backgroundColor = "#0000FF";
@@ -151,11 +167,16 @@ function resultsCheck(){
 
 // Continue here!
 function loadResults(){
-  var skill = sessionStorage.getItem("skill", skillList);
-  var area = sessionStorage.getItem("area", areaList);
-  var criteria = sessionStorage.getItem("criteria", criteriaList);
+  var skillList = sessionStorage.getItem("skill", skillList);
+  var testList = skillList.split(",");
+  var areaList = sessionStorage.getItem("area", areaList);
+  var criteriaList = sessionStorage.getItem("criteria", criteriaList);
   for (i = 0; i < person.length; i++){
-    if (area.every(r => person[i].area.includes(r))){
+    alert(testList);
+    if (testList.every(function(val){return person[i].skills.indexOf(val) >= 0;})){
+      alert(person[i].name);
+      alert(skillList);
+      alert('works')
       let div = document.createElement('div');
       div.id = 'content';
       div.class = 'note';
