@@ -143,6 +143,32 @@ function run(){
   }
 }
 
+function toggle1(){
+  var list = document.getElementsByClassName("criteriabox");
+    if(list[0].checked == true){
+      list[1].checked = false;
+      list[2].checked = false;
+  }run()
+}
+
+function toggle2(){
+  var list = document.getElementsByClassName("criteriabox");
+    if(list[1].checked == true){
+      list[0].checked = false;
+      list[2].checked = false;
+  }run()
+}
+
+function toggle3(){
+  var list = document.getElementsByClassName("criteriabox");
+    if(list[2].checked == true){
+      list[0].checked = false;
+      list[1].checked = false;
+  }run()
+}
+
+
+
 function skillCheck(){
   var boxes = document.getElementsByClassName("skillbox");
   var classes = document.getElementsByClassName("checklabel");
@@ -161,6 +187,8 @@ function move(){
   for (i = 0; i < criteria.length; i++){
     if(criteria[i].checked == true){
       criteriaList.push(criteria[i].name);
+    }else{
+      criteriaList = " ";
     }
   }
   sessionStorage.setItem("criteria", criteriaList);
