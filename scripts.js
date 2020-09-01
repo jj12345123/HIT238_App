@@ -2,39 +2,55 @@ const person = [
       {
       name:"Brad",
       area: "it",
-      teams: "zero",
-      organisationalskills: ["leadership","motivating"],
-      level: "2nd",
-      availability: ["morning","day"],
+      teams: " zero",
+      organisationalskills: [" leadership"," motivating"],
+      level: " 2nd",
+      availability: [" morning"," day"],
       skills: [" python"," javascript"],
       phone: "0123456789",
       email: "test.email"
     },
     {
       name: "John",
-      skills: [" python"," javascript"],
       area: "engineering",
+      teams: " zero",
+      organisationalskills: [" leadership"," motivating"],
+      level: " 2nd",
+      availability: [" morning"," day"],
+      skills: [" python"," javascript"],
       phone: "0123456789",
       email: "test.email"
     },
     {
       name: "Sara",
-      skills: [" javascript"," html"],
       area: "environment",
+      teams: " zero",
+      organisationalskills: [" leadership"," motivating"],
+      level: " 2nd",
+      availability: [" morning"," day"],
+      skills: [" javascript"," html"],
       phone: "0123456789",
       email: "test.email"
     },
     {
       name: "Jones",
-      skills: [" SQL"," R"],
       area: "marketing",
+      teams: " zero",
+      organisationalskills: [" leadership"," motivating"],
+      level: " 2nd",
+      availability: [" morning"," day"],
+      skills: [" SQL"," R"],
       phone: "0123456789",
       email: "test.email"
     },
     {
       name: "Helmut",
-      skills: [" python"],
       area: "marketing",
+      teams: " zero",
+      organisationalskills: [" leadership"," motivating"],
+      level: " 2nd",
+      availability: [" morning"," day"],
+      skills: [" python"],
       phone: "0123456789",
       email: "test.email"
     }
@@ -168,28 +184,32 @@ function resultsCheck(){
 // Continue here!
 function loadResults(){
   var skillList = sessionStorage.getItem("skill", skillList);
-  var testList = skillList.split(",");
+  var splitSkillList = skillList.split(",");
   var areaList = sessionStorage.getItem("area", areaList);
   var criteriaList = sessionStorage.getItem("criteria", criteriaList);
+  var splitCriteriaList = criteriaList.split(",");
   for (i = 0; i < person.length; i++){
-    alert(testList);
-    if (testList.every(function(val){return person[i].skills.indexOf(val) >= 0;})){
-      alert(person[i].name);
-      alert(skillList);
-      alert('works')
-      let div = document.createElement('div');
-      div.id = 'content';
-      div.class = 'note';
+    var allSkills = person[i].teams;
+    allSkills += person[i].organisationalskills;
+    allSkills += person[i].level;
+    allSkills += person[i].availability;
+    alert(allSkills);
+    if (splitSkillList.every(function(val){return person[i].skills.indexOf(val) >= 0;}) &&
+        splitCriteriaList.every(function(val){return allSkills.indexOf(val) >= 0;})){
+          alert("works");
+          let div = document.createElement('div');
+          div.id = 'content';
+          div.class = 'note';
 
-// create a new heading and add it to the div
-      let name = document.createElement('h5');
-      name.textContent = person[i].name + '\n' + person[i].phone + '\n' + person[i].email;
-      div.appendChild(name);
+    // create a new heading and add it to the div
+          let name = document.createElement('h5');
+          name.textContent = person[i].name + '\n' + person[i].phone + '\n' + person[i].email;
+          div.appendChild(name);
 
-// add div to the document
-      document.body.appendChild(div);
-      div.style.textAlign = "center";
-      div.style.border = "thick solid #0000FF";
-      div.style.margin = "2% 10% 2% 10%";}
+    // add div to the document
+          document.body.appendChild(div);
+          div.style.textAlign = "center";
+          div.style.border = "thick solid #0000FF";
+          div.style.margin = "2% 10% 2% 10%";}
     }
 }
