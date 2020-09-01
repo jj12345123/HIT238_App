@@ -216,13 +216,10 @@ function loadResults(){
         splitCriteriaList.every(function(val){return allSkills.indexOf(val) >= 0;})){
           count += 1;
           let div = document.createElement('div');
-
-    // create a new heading and add it to the div
           let name = document.createElement('h2');
           name.textContent = person[i].name + '\n' + person[i].phone + '\n' + person[i].email;
           div.appendChild(name);
 
-    // add div to the document
           document.body.appendChild(div);
           div.style.textAlign = "center";
           div.style.border = "thick solid #0000FF";

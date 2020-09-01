@@ -1,5 +1,5 @@
 .areas,
-.itSkills{
+.skills{
   display: grid;
   grid-template-columns: 40% 40%;
   grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
