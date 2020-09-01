@@ -225,7 +225,6 @@ function loadResults(){
           div.style.border = "thick solid #0000FF";
           div.style.margin = "2% 10% 2% 10%";}
     }if(count < 1){
-      alert("no");
       let div = document.createElement('div');
       let name = document.createElement('h2');
       name.textContent = "No results";
@@ -234,4 +233,10 @@ function loadResults(){
       div.style.textAlign = "center";
       div.style.border = "thick solid #0000FF";
       div.style.margin = "2% 10% 2% 10%";}
+
+      var createA = document.createElement('a');
+      var createAText = document.createTextNode("New Search");
+      createA.setAttribute('href', "index.html");
+      createA.appendChild(createAText);
+      document.body.appendChild(createA);
 }
