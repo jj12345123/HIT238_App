@@ -111,22 +111,14 @@ document.getElementById('btn').addEventListener('click', function (evt) {
         div.style.margin = "2% 10% 2% 10%";}
 });
 
-var peopleByArea = [];
 function areaCheck(){
   var areaList = [];
-  var peopleList = [];
   var areas = document.getElementsByClassName("areabox");
   for (i = 0; i < areas.length; i++){
     if(areas[i].checked == true){
       areaList.push(areas[i].name);
     }
-  }for (i = 0; i < person.length; i++){
-    if(person[i].area == areaList){
-      peopleList.push(person[i]);
-    }
   }
-  var peopleByArea = peopleList;
-  sessionStorage.setItem("people", peopleByArea);
   sessionStorage.setItem("area", areaList);
   window.location.href = "criteria.html";
 }
@@ -187,8 +179,6 @@ function move(){
   for (i = 0; i < criteria.length; i++){
     if(criteria[i].checked == true){
       criteriaList.push(criteria[i].name);
-    }else{
-      criteriaList = " ";
     }
   }
   sessionStorage.setItem("criteria", criteriaList);
@@ -216,21 +206,19 @@ function loadResults(){
   var areaList = sessionStorage.getItem("area", areaList);
   var criteriaList = sessionStorage.getItem("criteria", criteriaList);
   var splitCriteriaList = criteriaList.split(",");
+  var count = 0;
   for (i = 0; i < person.length; i++){
     var allSkills = person[i].teams;
     allSkills += person[i].organisationalskills;
     allSkills += person[i].level;
     allSkills += person[i].availability;
-    alert(allSkills);
     if (splitSkillList.every(function(val){return person[i].skills.indexOf(val) >= 0;}) &&
         splitCriteriaList.every(function(val){return allSkills.indexOf(val) >= 0;})){
-          alert("works");
+          count += 1;
           let div = document.createElement('div');
-          div.id = 'content';
-          div.class = 'note';
 
     // create a new heading and add it to the div
-          let name = document.createElement('h5');
+          let name = document.createElement('h2');
           name.textContent = person[i].name + '\n' + person[i].phone + '\n' + person[i].email;
           div.appendChild(name);
 
@@ -239,5 +227,14 @@ function loadResults(){
           div.style.textAlign = "center";
           div.style.border = "thick solid #0000FF";
           div.style.margin = "2% 10% 2% 10%";}
-    }
+    }if(count < 1){
+      alert("no");
+      let div = document.createElement('div');
+      let name = document.createElement('h2');
+      name.textContent = "No results";
+      div.appendChild(name);
+      document.body.appendChild(div);
+      div.style.textAlign = "center";
+      div.style.border = "thick solid #0000FF";
+      div.style.margin = "2% 10% 2% 10%";}
 }
