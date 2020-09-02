@@ -33,8 +33,22 @@ h3{
   font-size: 300%;
 }
 
+a{
+  text-align: center;
+  font-size: 400%;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 10%;
+  background-color: orange;
+  margin-left: 33%;
+}
+
+.arrowLeft{
+  margin-left: 20px;
+}
+
 .arrowRight{
-  margin-left: 95%;
+  margin-left: 80%;
 }
 
 .criterias{
