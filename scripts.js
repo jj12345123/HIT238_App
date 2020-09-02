@@ -924,61 +924,7 @@ const person = [
     }
   ]
 
-for (i = 0; i < person.length; i++)
-  console.log(person[i].skills);
-
-var mark = ["python ","java "]
-//var neil = ["python","javascript"]
-
-
-//function check() {
-//      for(i = 0; container.vehicle1.length; i++){
-//       if (document.getElementById('1').checked) {
-//           alert("checked");
-//       } else {
-//           alert("Not checked.");
-//       }
-//     }
-//   }
-
-
-document.getElementById('btn').addEventListener('click', function (evt) {
-  var selectArray = [];
-  var empty = [];
-    evt.preventDefault();
-    var theForm = document.getElementById( 'myBtnContainer' );
-//initialise empty array
-    for (i = 0; i < theForm.vehicle1.length; i++) {
-        if(theForm.vehicle1[i].type == 'checkbox'){
-             if(theForm.vehicle1[i].checked == true){
-                selectArray.push(theForm.vehicle1[i].value);
-             }
-         }
-    }  for (i = 0; i < selectArray.length; i++);
-        var empty = [];
-        for (i = 0; i < person.length; i++)
-
-        if (selectArray.some(c => person[i].skills.includes(c))){
-          empty.push(person[i]);
-
-      }
-      for (i = 0; i < empty.length; i++){
-        let div = document.createElement('div');
-        div.id = 'content';
-        div.class = 'note';
-
-// create a new heading and add it to the div
-        let name = document.createElement('h5');
-        name.textContent = empty[i].name + '\n' + empty[i].skills;
-        div.appendChild(name);
-
-// add div to the document
-        document.body.appendChild(div);
-        div.style.textAlign = "center";
-        div.style.border = "thick solid #0000FF";
-        div.style.margin = "2% 10% 2% 10%";}
-});
-
+// This function records the area user selects and pushes it to session storage, as well as takes user to criteria page.
 function areaCheck(){
   var areaList = [];
   var areas = document.getElementsByClassName("areabox");
@@ -991,6 +937,7 @@ function areaCheck(){
   window.location.href = "criteria.html";
 }
 
+// This function sets the box colour based on clicked boxes on criteria page.
 function run(){
   var boxes = document.getElementsByClassName("checkbox");
   var classes = document.getElementsByClassName("checklabel");
@@ -1003,6 +950,7 @@ function run(){
   }
 }
 
+// This function allows only one of the three options of "Number of teams worked with" to be selected in criteria page.
 function toggle1(){
   var list = document.getElementsByClassName("criteriabox");
     if(list[0].checked == true){
@@ -1011,6 +959,7 @@ function toggle1(){
   }run()
 }
 
+// This function allows only one of the three options of "Number of teams worked with" to be selected in criteria page.
 function toggle2(){
   var list = document.getElementsByClassName("criteriabox");
     if(list[1].checked == true){
@@ -1019,6 +968,7 @@ function toggle2(){
   }run()
 }
 
+// This function allows only one of the three options of "Number of teams worked with" to be selected in criteria page.
 function toggle3(){
   var list = document.getElementsByClassName("criteriabox");
     if(list[2].checked == true){
@@ -1027,8 +977,7 @@ function toggle3(){
   }run()
 }
 
-
-
+// This function sets the box colour when clicked on all skill selection pages.
 function skillCheck(){
   var boxes = document.getElementsByClassName("skillbox");
   var classes = document.getElementsByClassName("checklabel");
@@ -1041,6 +990,7 @@ function skillCheck(){
   }
 }
 
+// This function takes user from criteria page to skill page based on the area the user selected in the first page.
 function move(){
   var criteriaList = [];
   var criteria = document.getElementsByClassName('criteriabox');
@@ -1055,6 +1005,7 @@ function move(){
   window.location.href = areaList;
 }
 
+// This function records user selected skills to session storage and takes user to results page.
 function resultsCheck(){
   var skillList = [];
   var skills = document.getElementsByClassName('skillbox');
@@ -1067,7 +1018,9 @@ function resultsCheck(){
   window.location.href = "results.html";
 }
 
-// Continue here!
+// This code loads the results on the results page.
+// The code retrieves the user selections from session sessionStorage.
+// Based on the match on the skills and criteria, results will presented on the screen.
 function loadResults(){
   var skillList = sessionStorage.getItem("skill", skillList);
   var splitSkillList = skillList.split(",");
@@ -1075,14 +1028,19 @@ function loadResults(){
   var criteriaList = sessionStorage.getItem("criteria", criteriaList);
   var splitCriteriaList = criteriaList.split(",");
   var count = 0;
+
+  // Run a loop to check if any matches for selected criteria and skills.
   for (i = 0; i < person.length; i++){
     var allSkills = person[i].teams;
     allSkills += person[i].organisationalskills;
     allSkills += person[i].level;
     allSkills += person[i].availability;
+
+    // If there is a match to selected user criteria, this code will run
     if (splitSkillList.every(function(val){return person[i].skills.indexOf(val) >= 0;}) &&
         splitCriteriaList.every(function(val){return allSkills.indexOf(val) >= 0;})){
           count += 1;
+
           let div = document.createElement('div');
           let name = document.createElement('h2');
           name.textContent = person[i].name + '\n' + person[i].phone + '\n' + person[i].email;
@@ -1092,16 +1050,20 @@ function loadResults(){
           div.style.textAlign = "center";
           div.style.border = "thick solid #0000FF";
           div.style.margin = "2% 10% 2% 10%";}
+
+    // If there are no results to show, this code will run and display the message of no results to user
     }if(count < 1){
       let div = document.createElement('div');
       let name = document.createElement('h2');
       name.textContent = "No results for selected criteria.";
       div.appendChild(name);
+
       document.body.appendChild(div);
       div.style.textAlign = "center";
       div.style.border = "thick solid #0000FF";
       div.style.margin = "2% 10% 2% 10%";}
 
+      // Button to take user to the beginning to do a new search
       var createA = document.createElement('a');
       var createAText = document.createTextNode("New Search");
       createA.setAttribute('href', "index.html");
