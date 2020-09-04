@@ -6,7 +6,7 @@ const person = [
       organisationalskills: [" leadership", " motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" python"," javascript", " networking"],
+      skills: [" python"," javascript", " networking", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -17,7 +17,7 @@ const person = [
       organisationalskills: [" delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" python", " javascript", " c", " cyber", " sql", " r"],
+      skills: [" python", " javascript", " c", " cyber", " sql", " r", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -28,7 +28,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" javascript", " html", " ux", " ai", " python", " neural"],
+      skills: [" javascript", " html", " ux", " ai", " python", " neural", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -39,7 +39,7 @@ const person = [
       organisationalskills: [" motivating"," delegating", " goalSetting", " conflictManagement"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" sql"," r", " blockchain", " ux", " ai"],
+      skills: [" sql"," r", " blockchain", " ux", " ai", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -50,7 +50,7 @@ const person = [
       organisationalskills: [" leadership"," conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" python", " c", " cyber", " sql"],
+      skills: [" python", " c", " cyber", " sql", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -61,7 +61,7 @@ const person = [
       organisationalskills: [" timeManagement", " goalSetting"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" python", " javascript", " html", " ux", " blockchain", " ai"],
+      skills: [" python", " javascript", " html", " ux", " blockchain", " ai", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -72,7 +72,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"," timeManagement", " delegating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" electrical", " statics", " chemical"],
+      skills: [" electrical", " statics", " chemical", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -83,7 +83,7 @@ const person = [
       organisationalskills: [" delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" statics", " steel", " concrete"],
+      skills: [" statics", " steel", " concrete", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -94,7 +94,7 @@ const person = [
       organisationalskills: [" timeManagement", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" statics", " mechanical", " concrete"],
+      skills: [" statics", " mechanical", " concrete", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -104,7 +104,7 @@ const person = [
       teams: " ten",
       organisationalskills: [" goalSetting", " conflictManagement"],
       level: " 4th",
-      availability: [" morning"," day", " evening"],
+      availability: [" morning"," day", " evening", ""],
       skills: [" statics", " steel"],
       phone: "0123456789",
       email: "email@email.com"
@@ -116,7 +116,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" statics", " electrical", " chemical"],
+      skills: [" statics", " electrical", " chemical", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -127,7 +127,7 @@ const person = [
       organisationalskills: [" goalSetting", " conflictManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" statics", " concrete", " chemical"],
+      skills: [" statics", " concrete", " chemical", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -138,7 +138,7 @@ const person = [
       organisationalskills: [" leadership", " motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" turtle"," ecosystem"],
+      skills: [" turtle"," ecosystem", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -149,7 +149,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" microbiology", " spatial", " conservation"],
+      skills: [" microbiology", " spatial", " conservation", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -160,7 +160,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" fire", " conservation"],
+      skills: [" fire", " conservation", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -171,7 +171,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting", " conflictManagement"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" ecosystem"," microbiology", " spatial"],
+      skills: [" ecosystem"," microbiology", " spatial", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -182,7 +182,7 @@ const person = [
       organisationalskills: [" leadership"," motivating", " timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" ecosystem", " microbiology", " spatial", " fire", " conservation"],
+      skills: [" ecosystem", " microbiology", " spatial", " fire", " conservation", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -193,7 +193,7 @@ const person = [
       organisationalskills: [" timeManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" turtle", " ecosystem", " microbiology", " spatial"],
+      skills: [" turtle", " ecosystem", " microbiology", " spatial", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -204,7 +204,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" social", " advertising", " marketinganalytics"],
+      skills: [" social", " advertising", " marketinganalytics", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -215,7 +215,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" onlinemarketing", " internationalmarketing", " storytelling"],
+      skills: [" onlinemarketing", " internationalmarketing", " storytelling", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -226,7 +226,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" social", " onlinemarketing", " advertising"],
+      skills: [" social", " onlinemarketing", " advertising", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -237,7 +237,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " goalSetting"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" marketinganalytics", " internationalmarketing", " storytelling"],
+      skills: [" marketinganalytics", " internationalmarketing", " storytelling", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -248,7 +248,7 @@ const person = [
       organisationalskills: [" goalSetting", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" marketinganalytics", " internationalmarketing", " social", " onlinemarketing"],
+      skills: [" marketinganalytics", " internationalmarketing", " social", " onlinemarketing", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -259,7 +259,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" internationalmarketing", " storytelling"],
+      skills: [" internationalmarketing", " storytelling", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -270,7 +270,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" risk", " stock", " bond"],
+      skills: [" risk", " stock", " bond", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -281,7 +281,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" bank", " internationalFinance", " capm"],
+      skills: [" bank", " internationalFinance", " capm", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -292,7 +292,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" risk", " bank", " stock"],
+      skills: [" risk", " bank", " stock", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -303,7 +303,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " conflictManagement"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" internationalFinance", " bond", " capm"],
+      skills: [" internationalFinance", " bond", " capm", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -314,7 +314,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" internationalFinance", " bond", " bank", " stock"],
+      skills: [" internationalFinance", " bond", " bank", " stock", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -325,7 +325,7 @@ const person = [
       organisationalskills: [" goalSetting", " conflictManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" internationalFinance", " risk", " stock"],
+      skills: [" internationalFinance", " risk", " stock", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -336,7 +336,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" strategic", " planning", " staffing"],
+      skills: [" strategic", " planning", " staffing", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -347,7 +347,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" leading", " organising", " controlling"],
+      skills: [" leading", " organising", " controlling", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -358,7 +358,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" strategic", " leading", " planning"],
+      skills: [" strategic", " leading", " planning", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -369,7 +369,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" organising", " staffing", " planning"],
+      skills: [" organising", " staffing", " planning", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -380,7 +380,7 @@ const person = [
       organisationalskills: [" leadership"," motivating", " timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" organising", " staffing", " strategic", " leading"],
+      skills: [" organising", " staffing", " strategic", " leading", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -391,7 +391,7 @@ const person = [
       organisationalskills: [" goalSetting", " conflictManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" organising", " strategic"],
+      skills: [" organising", " strategic", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -402,7 +402,7 @@ const person = [
       organisationalskills: [" leadership", " motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" anatomy", " epidemiology", " sociology"],
+      skills: [" anatomy", " epidemiology", " sociology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -413,7 +413,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" nutrition", " exercise", "  promotion"],
+      skills: [" nutrition", " exercise", "  promotion", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -424,7 +424,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" anatomy", " nutrition", " epidemiology"],
+      skills: [" anatomy", " nutrition", " epidemiology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -435,7 +435,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting"],
       level: " 4th",
       availability: [" morning", " day", " evening"],
-      skills: [" exercise", " sociology", "  promotion"],
+      skills: [" exercise", " sociology", "  promotion", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -446,7 +446,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning", " day"],
-      skills: [" exercise", " epidemiology"],
+      skills: [" exercise", " epidemiology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -457,7 +457,7 @@ const person = [
       organisationalskills: [" delegating", " goalSetting", " conflictManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" sociology", "  promotion", " exercise"],
+      skills: [" sociology", "  promotion", " exercise", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -468,7 +468,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning", " day"],
-      skills: [" cardiology", " dermatology", " neurology"],
+      skills: [" cardiology", " dermatology", " neurology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -479,7 +479,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning", " day", " evening"],
-      skills: [" radiology", " hermatology", " pathology"],
+      skills: [" radiology", " hermatology", " pathology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -490,7 +490,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" cardiology", " radiology", " dermatology"],
+      skills: [" cardiology", " radiology", " dermatology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -501,7 +501,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting"],
       level: " 4th",
       availability: [" morning", " day", " evening"],
-      skills: [" hermatology", " neurology", " pathology"],
+      skills: [" hermatology", " neurology", " pathology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -512,7 +512,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning", " day"],
-      skills: [" hermatology", " neurology", " cardiology", " radiology"],
+      skills: [" hermatology", " neurology", " cardiology", " radiology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -523,7 +523,7 @@ const person = [
       organisationalskills: [" goalSetting", " conflictManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" radiology", " dermatology", " neurology", " pathology"],
+      skills: [" radiology", " dermatology", " neurology", " pathology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -534,7 +534,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" supply", " airfreight", " transportation"],
+      skills: [" supply", " airfreight", " transportation", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -545,7 +545,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" seafreight", " inventory", " warehousing"],
+      skills: [" seafreight", " inventory", " warehousing", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -556,7 +556,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" supply", " seafreight", " airfreight"],
+      skills: [" supply", " seafreight", " airfreight", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -567,7 +567,7 @@ const person = [
       organisationalskills: [" delegating", " goalSetting", " conflictManagement"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" inventory", " transportation", " warehousing"],
+      skills: [" inventory", " transportation", " warehousing", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -578,7 +578,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" inventory", " transportation", " supply", " seafreight"],
+      skills: [" inventory", " transportation", " supply", " seafreight", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -589,7 +589,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " conflictManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" transportation", " supply", " warehousing"],
+      skills: [" transportation", " supply", " warehousing", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -600,7 +600,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" python"," javascript"],
+      skills: [" python"," javascript", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -611,7 +611,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" cognitivepsychology", " forensicpsychology", " neuropsychology"],
+      skills: [" cognitivepsychology", " forensicpsychology", " neuropsychology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -622,7 +622,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" geriaticpsychology", " clinicalpsychology", " counselingspychology"],
+      skills: [" geriaticpsychology", " clinicalpsychology", " counselingspychology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -633,7 +633,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" cognitivepsychology", " geriaticpsychology", " forensicpsychology"],
+      skills: [" cognitivepsychology", " geriaticpsychology", " forensicpsychology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -644,7 +644,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" clinicalpsychology", " neuropsychology", " forensicpsychology"],
+      skills: [" clinicalpsychology", " neuropsychology", " forensicpsychology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -655,7 +655,7 @@ const person = [
       organisationalskills: [" goalSetting", " conflictManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" clinicalpsychology", " neuropsychology", " cognitivepsychology", " geriaticpsychology"],
+      skills: [" clinicalpsychology", " neuropsychology", " cognitivepsychology", " geriaticpsychology", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -666,7 +666,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" interiorarchitecture", " residentialarchitecture", " landscapearchitecture"],
+      skills: [" interiorarchitecture", " residentialarchitecture", " landscapearchitecture", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -677,7 +677,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" housingarchitecture", " designarchitecture", " industrilarchitecture"],
+      skills: [" housingarchitecture", " designarchitecture", " industrilarchitecture", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -688,7 +688,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" interiorarchitecture", " housingarchitecture", " residentialarchitecture"],
+      skills: [" interiorarchitecture", " housingarchitecture", " residentialarchitecture", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -699,7 +699,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" designarchitecture", " landscapearchitecture", " residentialarchitecture"],
+      skills: [" designarchitecture", " landscapearchitecture", " residentialarchitecture", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -710,7 +710,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" designarchitecture", " landscapearchitecture", " interiorarchitecture", " housingarchitecture"],
+      skills: [" designarchitecture", " landscapearchitecture", " interiorarchitecture", " housingarchitecture", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -721,7 +721,7 @@ const person = [
       organisationalskills: [" goalSetting", " conflictManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" landscapearchitecture", " interiorarchitecture", " designarchitecture"],
+      skills: [" landscapearchitecture", " interiorarchitecture", " designarchitecture", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -732,7 +732,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" journey", " microsoft"],
+      skills: [" journey", " microsoft", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -743,7 +743,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" analytics", " relationship", " communication"],
+      skills: [" analytics", " relationship", " communication", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -754,7 +754,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" journey", " analytics"],
+      skills: [" journey", " analytics", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -765,7 +765,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" microsoft", " relationship"],
+      skills: [" microsoft", " relationship", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -776,7 +776,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" communication", " journey", " microsoft"],
+      skills: [" communication", " journey", " microsoft", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -787,7 +787,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" microsoft", " analytics"],
+      skills: [" microsoft", " analytics", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -798,7 +798,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" thermodynamics", " magnetism", " geophysics"],
+      skills: [" thermodynamics", " magnetism", " geophysics", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -809,7 +809,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" plasmaphysics", " astrophysics", " nuclearphysics"],
+      skills: [" plasmaphysics", " astrophysics", " nuclearphysics", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -820,7 +820,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" javascript"," html"],
+      skills: [" thermodynamics", " plasmaphysics", " magnetism", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -831,7 +831,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" SQL"," R"],
+      skills: [" astrophysics", " nuclearphysics", " geophysics", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -842,7 +842,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" python"],
+      skills: [" thermodynamics", " nuclearphysics", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -853,7 +853,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" python"],
+      skills: ["  geophysics", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -864,7 +864,7 @@ const person = [
       organisationalskills: [" leadership"," motivating"],
       level: " 1st",
       availability: [" morning"," day"],
-      skills: [" literature", " creative", " digitalarts"],
+      skills: [" literature", " creative", " digitalarts", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -875,7 +875,7 @@ const person = [
       organisationalskills: [" timeManagement", " delegating", " goalSetting", " conflictManagement"],
       level: " 2nd",
       availability: [" morning"," day", " evening"],
-      skills: [" linguistics", " performance"],
+      skills: [" linguistics", " performance", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -886,7 +886,7 @@ const person = [
       organisationalskills: [" motivating", " timeManagement", " delegating", " goalSetting"],
       level: " 3rd",
       availability: [" evening"],
-      skills: [" literature", " linguistics", " creative"],
+      skills: [" literature", " linguistics", " creative", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -897,7 +897,7 @@ const person = [
       organisationalskills: [" leadership", " timeManagement", " goalSetting"],
       level: " 4th",
       availability: [" morning"," day", " evening"],
-      skills: [" performance", " linguistics", " creative"],
+      skills: [" performance", " linguistics", " creative", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -908,7 +908,7 @@ const person = [
       organisationalskills: [" motivating", " delegating", " conflictManagement"],
       level: " 1stMaster",
       availability: [" morning"," day"],
-      skills: [" performance", " linguistics", " creative"],
+      skills: [" performance", " linguistics", " creative", ""],
       phone: "0123456789",
       email: "email@email.com"
     },
@@ -919,7 +919,7 @@ const person = [
       organisationalskills: [" goalSetting", " conflictManagement"],
       level: " 2ndMaster",
       availability: [" day", " evening"],
-      skills: [" digitalarts"],
+      skills: [" digitalarts", ""],
       phone: "0123456789",
       email: "email@email.com"
     }
@@ -953,28 +953,100 @@ function run(){
 
 // This function allows only one of the three options of "Number of teams worked with" to be selected in criteria page.
 function toggle1(){
-  var list = document.getElementsByClassName("criteriabox");
-    if(list[0].checked == true){
-      list[1].checked = false;
-      list[2].checked = false;
+  var list = document.getElementsByClassName("teams");
+  if(list[0].checked == true){
+    list[1].checked = false;
+    list[2].checked = false;
   }run()
 }
 
 // This function allows only one of the three options of "Number of teams worked with" to be selected in criteria page.
 function toggle2(){
-  var list = document.getElementsByClassName("criteriabox");
-    if(list[1].checked == true){
-      list[0].checked = false;
-      list[2].checked = false;
+  var list = document.getElementsByClassName("teams");
+  if(list[1].checked == true){
+    list[0].checked = false;
+    list[2].checked = false;
   }run()
 }
 
 // This function allows only one of the three options of "Number of teams worked with" to be selected in criteria page.
 function toggle3(){
-  var list = document.getElementsByClassName("criteriabox");
-    if(list[2].checked == true){
-      list[0].checked = false;
-      list[1].checked = false;
+  var list = document.getElementsByClassName("teams");
+  if(list[2].checked == true){
+    list[0].checked = false;
+    list[1].checked = false;
+  }run()
+}
+
+// This function allows only one of the three options of "year level" to be selected in criteria page.
+function toggle4(){
+  var list = document.getElementsByClassName("yearlevel");
+  if(list[0].checked == true){
+    list[1].checked = false;
+    list[2].checked = false;
+    list[3].checked = false;
+    list[4].checked = false;
+    list[5].checked = false;
+  }run()
+}
+
+// This function allows only one of the three options of "year level" to be selected in criteria page.
+function toggle5(){
+  var list = document.getElementsByClassName("yearlevel");
+  if(list[1].checked == true){
+    list[0].checked = false;
+    list[2].checked = false;
+    list[3].checked = false;
+    list[4].checked = false;
+    list[5].checked = false;
+  }run()
+}
+
+// This function allows only one of the three options of "year level" to be selected in criteria page.
+function toggle6(){
+  var list = document.getElementsByClassName("yearlevel");
+  if(list[2].checked == true){
+    list[1].checked = false;
+    list[0].checked = false;
+    list[3].checked = false;
+    list[4].checked = false;
+    list[5].checked = false;
+  }run()
+}
+
+// This function allows only one of the three options of "year level" to be selected in criteria page.
+function toggle7(){
+  var list = document.getElementsByClassName("yearlevel");
+  if(list[3].checked == true){
+    list[1].checked = false;
+    list[2].checked = false;
+    list[0].checked = false;
+    list[4].checked = false;
+    list[5].checked = false;
+  }run()
+}
+
+// This function allows only one of the three options of "year level" to be selected in criteria page.
+function toggle8(){
+  var list = document.getElementsByClassName("yearlevel");
+  if(list[4].checked == true){
+    list[1].checked = false;
+    list[2].checked = false;
+    list[3].checked = false;
+    list[0].checked = false;
+    list[5].checked = false;
+  }run()
+}
+
+// This function allows only one of the three options of "year level" to be selected in criteria page.
+function toggle9(){
+  var list = document.getElementsByClassName("yearlevel");
+  if(list[5].checked == true){
+    list[1].checked = false;
+    list[2].checked = false;
+    list[3].checked = false;
+    list[4].checked = false;
+    list[0].checked = false;
   }run()
 }
 
@@ -1037,9 +1109,11 @@ function loadResults(){
     allSkills += person[i].level;
     allSkills += person[i].availability;
 
+
     // If there is a match to selected user criteria, this code will run
     if (splitSkillList.every(function(val){return person[i].skills.indexOf(val) >= 0;}) &&
-        splitCriteriaList.every(function(val){return allSkills.indexOf(val) >= 0;})){
+        splitCriteriaList.every(function(val){return allSkills.indexOf(val) >= 0;}) &&
+        areaList == person[i].area){
           count += 1;
 
           let div = document.createElement('div');
