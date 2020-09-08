@@ -26,12 +26,14 @@
 h2{
   text-align: center;
   font-size: 400%;
+  font-family: garamond;
 }
 
 /* Sets styling for subheadings on the criteria page */
 h3{
   text-align: center;
   font-size: 300%;
+  font-family: garamond;
 }
 
 /* Sets styling for all the links */
@@ -42,7 +44,7 @@ a{
   padding: 10px;
   border-radius: 10%;
   background-color: orange;
-  margin-left: 33%;
+  margin-left: 37%;
 }
 
 /* Sets the return button on the top left of criteris and skills pages */

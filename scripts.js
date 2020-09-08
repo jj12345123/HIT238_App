@@ -1,3 +1,5 @@
+
+// List of people and their attributes used for the rearch results
 const person = [
       {
       name:"Brad Smith",
