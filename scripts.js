@@ -1,7 +1,7 @@
 //Service workers
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/HIT238/sw.js').then(function(registration) {
+    navigator.serviceWorker.register('/HIT238_App/sw.js').then(function(registration) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }, function(err) {
