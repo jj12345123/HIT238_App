@@ -1131,31 +1131,40 @@ function loadResults(){
           count += 1;
 
           let div = document.createElement('div');
-          let name = document.createElement('h2');
-          name.textContent = person[i].name + '\n' + person[i].phone + '\n' + person[i].email;
-          div.appendChild(name);
+          div.setAttribute("class", "result");
+          let result = document.createElement('h2');
+          result.setAttribute("class", "resultText");
+          result.textContent = person[i].name + '\n' + person[i].phone + '\n' + person[i].email;
+          div.appendChild(result);
 
           document.body.appendChild(div);
           div.style.textAlign = "center";
-          div.style.border = "thick solid #0000FF";
+          div.style.border = "thick solid none ";
           div.style.margin = "2% 10% 2% 10%";}
 
     // If there are no results to show, this code will run and display the message of no results to user
     }if(count < 1){
       let div = document.createElement('div');
-      let name = document.createElement('h2');
-      name.textContent = "No results for selected criteria.";
-      div.appendChild(name);
+      div.setAttribute("class", "result");
+      let result = document.createElement('h2');
+      div.setAttribute("class", "resultText");
+      result.textContent = "No results for selected criteria.";
+      var area = document.querySelector('.content');
+      div.appendChild(result);
 
       document.body.appendChild(div);
       div.style.textAlign = "center";
-      div.style.border = "thick solid #0000FF";
+      div.style.border = "thick solid none";
       div.style.margin = "2% 10% 2% 10%";}
 
       // Button to take user to the beginning to do a new search
-      var createA = document.createElement('a');
-      var createAText = document.createTextNode("New Search");
-      createA.setAttribute('href', "index.html");
-      createA.appendChild(createAText);
-      document.body.appendChild(createA);
+      var btn = document.createElement("button");
+      btn.innerHTML = "New Search";
+      btn.onclick = newSearch;
+      document.body.appendChild(btn);
+}
+
+// function that tkes user to the home page
+function newSearch(){
+  window.location.href = "index.html";
 }

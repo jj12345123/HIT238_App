@@ -30,6 +30,11 @@ body{
     font-size: 300%;
 }
 
+a{
+  margin-left: 33%;
+  font-size: 400%;
+}
+
 /* Sets styling for headings on the pages */
 h2{
   text-align: center;
@@ -114,4 +119,25 @@ h3{
 	appearance: none;
 	border:none;
 	outline:0;
+}
+
+button{
+  font-size: 400%;
+  padding: 20px;
+  width: 100%;
+  background-color: orange;
+  color: white;
+  border-radius: 2rem;
+  border-style: none;
+}
+
+.result{
+  background-color: #c4b7a6;
+  color: white;
+  border-radius: 2rem;
+  border-style: none;
+}
+
+.resultText{
+  color: white;
 }
