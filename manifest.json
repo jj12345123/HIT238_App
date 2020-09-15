@@ -3,12 +3,12 @@
     "short_name": "Team Building",
     "icons": [
       {
-          "src": "/HIT238_App/tb_logo.jpeg",
+          "src": "/HIT238_App/tb_logo.png",
           "sizes": "142x108",
           "type": "image/png"
       },
         {
-            "src": "/HIT238_App/back_arrow.jpeg",
+            "src": "/HIT238_App/back_arrow.png",
             "sizes": "79x75",
             "type": "image/png"
         }
