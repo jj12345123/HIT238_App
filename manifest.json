@@ -2,14 +2,14 @@
     "name": "Team Building App",
     "short_name": "Team Building",
     "icons": [
+      {
+          "src": "/HIT238_App/tb_logo.jpeg",
+          "sizes": "142x108",
+          "type": "image/png"
+      },
         {
             "src": "/HIT238_App/back_arrow.jpeg",
             "sizes": "79x75",
-            "type": "image/png"
-        },
-        {
-            "src": "/HIT238/icon-512.PNG",
-            "sizes": "397x397",
             "type": "image/png"
         }
     ],
