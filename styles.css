@@ -1,3 +1,11 @@
+body{
+  background-color: #e6e2d3;
+}
+
+.pageTop{
+  background-color: #c4b7a6;
+}
+
 /* Sets the grid for the area and skills pages */
 .areas,
 .skills{
@@ -26,7 +34,8 @@
 h2{
   text-align: center;
   font-size: 400%;
-  font-family: garamond;
+  font-family: aharoni;
+  color: #3e4444;
 }
 
 /* Sets styling for subheadings on the criteria page */
@@ -36,8 +45,8 @@ h3{
   font-family: garamond;
 }
 
-/* Sets styling for all the links */
-a{
+/* Sets styling for all the links - DELETE THIS!! */
+{
   text-align: center;
   font-size: 400%;
   border: 3px solid black;
@@ -61,17 +70,17 @@ a{
 .criterias{
   display: grid;
   grid-template-columns: 28% 28% 28%;
-  grid-template-rows: 150px;
+  grid-template-rows: 170px;
   grid-gap: 4%;
   margin-left: 10%
 }
 
 /* Sets styling for buttons on criterias page and results button and skills pages */
 .criterias2,
-.results{
+{
   display: grid;
   grid-template-columns: 28% 28% 28%;
-  grid-template-rows: 150px 150px;
+  grid-template-rows: 170px 170px;
   grid-gap: 4%;
   margin-left: 10%
 }
@@ -92,6 +101,7 @@ a{
 /* Sets background color for results button */
 .resultslabel{
   background-color: orange;
+  height: 150px;
 }
 
 /* Hides the checkbox icon box for all the buttons */

@@ -6,31 +6,34 @@
     <meta name="Skill Matching App" content="This app is for student use.">
     <meta name="viewport">
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.json">
   </head>
   <body>
 
-      <br>
+      <div class="pageTop">
+          <br>
 
-      <!-- Button to take user to the home page -->
-      <a href="index.html" class="return">Return</a>
+          <!-- Button to take user to the home page -->
+          <a href="index.html" class="return"><img src="back_arrow.jpeg"/></a>
 
-      <!-- Top heading -->
-      <h2>Select Criteria</h2>
+          <!-- Top heading -->
+          <h2>SELECT CRITERIA</h2>
+      </div>
 
       <!-- Number of teams worked wit boxes -->
       <h3>Number of teams worked with</h3>
       <div class="criterias">
           <div class="row">
             <input class="checkbox criteriabox teams" type="checkbox" name=" zero" id="zero" onclick="toggle1()">
-            <label class="checklabel" for="zero">0 -5 </label>
+            <label class="checklabel" for="zero"><br>0 - 5 </label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox teams" type="checkbox" name=" five" id="five" onclick="toggle2()">
-            <label class="checklabel" for="five">5 - 10</label>
+            <label class="checklabel" for="five"><br>5 - 10</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox teams" type="checkbox" name=" ten" id="ten" onclick="toggle3()">
-            <label class="checklabel" for="ten">10 +</label>
+            <label class="checklabel" for="ten"><br>10 +</label>
           </div>
       </div>
 
@@ -39,27 +42,27 @@
       <div class="criterias criterias2">
           <div class="row">
             <input class="checkbox criteriabox" type="checkbox" name=" timeManagement" id="timeManagement" onclick="run()">
-            <label class="checklabel" for="timeManagement">Time-<br>Management</label>
+            <label class="checklabel" for="timeManagement"><br>Time-<br>Management</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox" type="checkbox" name=" leadership" id="leadership" onclick="run()">
-            <label class="checklabel" for="leadership">Leadership</label>
+            <label class="checklabel" for="leadership"><br>Leadership</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox" type="checkbox" name=" motivating" id="motivating" onclick="run()">
-            <label class="checklabel" for="motivating">Motivating</label>
+            <label class="checklabel" for="motivating"><br>Motivating</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox" type="checkbox" name=" conflictManagement" id="conflictManagement" onclick="run()">
-            <label class="checklabel" for="conflictManagement">Conflict-<br>Management</label>
+            <label class="checklabel" for="conflictManagement"><br>Conflict-<br>Management</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox" type="checkbox" name=" delegating" id="delegating" onclick="run()">
-            <label class="checklabel" for="delegating">Delegating</label>
+            <label class="checklabel" for="delegating"><br>Delegating</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox" type="checkbox" name=" goalSetting" id="goalSetting" onclick="run()">
-            <label class="checklabel" for="goalSetting">Goal Setting</label>
+            <label class="checklabel" for="goalSetting"><br>Goal Setting</label>
           </div>
       </div>
 
@@ -68,27 +71,27 @@
       <div class="criterias criterias2">
           <div class="row">
             <input class="checkbox criteriabox yearlevel" type="checkbox" name=" 1st" id="1st" onclick="toggle4()">
-            <label class="checklabel" for="1st">1st Year<br>Undergrad</label>
+            <label class="checklabel" for="1st"><br>1st Year<br>Undergrad</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox yearlevel" type="checkbox" name=" 2nd" id="2nd" onclick="toggle5()">
-            <label class="checklabel" for="2nd">2nd Year<br>Undergrad</label>
+            <label class="checklabel" for="2nd"><br>2nd Year<br>Undergrad</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox yearlevel" type="checkbox" name=" 3rd" id="3rd" onclick="toggle6()">
-            <label class="checklabel" for="3rd">3rd Year<br>Undergrad</label>
+            <label class="checklabel" for="3rd"><br>3rd Year<br>Undergrad</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox yearlevel" type="checkbox" name=" 4th" id="4th" onclick="toggle7()">
-            <label class="checklabel" for="4th">4th Year<br>Undergrad</label>
+            <label class="checklabel" for="4th"><br>4th Year<br>Undergrad</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox yearlevel" type="checkbox" name=" 1stMaster" id="1stMaster" onclick="toggle8()">
-            <label class="checklabel" for="1stMaster">1st Year<br>Masters</label>
+            <label class="checklabel" for="1stMaster"><br>1st Year<br>Masters</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox yearlevel" type="checkbox" name=" 2ndMaster" id="2ndMaster" onclick="toggle9()">
-            <label class="checklabel" for="2ndMaster">2nd Year<br>Masters</label>
+            <label class="checklabel" for="2ndMaster"><br>2nd Year<br>Masters</label>
           </div>
       </div>
 
@@ -97,23 +100,25 @@
       <div class="criterias">
           <div class="row">
             <input class="checkbox criteriabox" type="checkbox" name=" morning" id="morning" onclick="run()">
-            <label class="checklabel" for="morning">Morning</label>
+            <label class="checklabel" for="morning"><br>Morning</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox" type="checkbox" name=" day" id="day" onclick="run()">
-            <label class="checklabel" for="day">Day</label>
+            <label class="checklabel" for="day"><br>Day</label>
           </div>
           <div class="row">
             <input class="checkbox criteriabox" type="checkbox" name=" evening" id="evening" onclick="run()">
-            <label class="checklabel" for="evening">Evening</label>
+            <label class="checklabel" for="evening"><br>Evening</label>
           </div>
       </div>
 
       <!-- Button to take user to the next page -->
-      <br><br><br>
-      <a class="next" onclick="move()">Next</a>
       <br><br>
-
+      <div class="results">
+        <input class="resultsbutton" type="checkbox" name="results" id="Results" onclick="move()">
+        <label class="resultslabel" for="Results"><br>Next<br></label>
+      </div>
+      <br><br>
     </body>
   <script src="scripts.js"></script>
 </html>
