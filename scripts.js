@@ -1064,6 +1064,33 @@ function toggle9(){
   }run()
 }
 
+// This function allows only one of the three options of "Expertise Level" to be selected in criteria page.
+function toggle10(){
+  var list = document.getElementsByClassName("expertise");
+  if(list[0].checked == true){
+    list[1].checked = false;
+    list[2].checked = false;
+  }run()
+}
+
+// This function allows only one of the three options of "Expertise Level" to be selected in criteria page.
+function toggle11(){
+  var list = document.getElementsByClassName("expertise");
+  if(list[1].checked == true){
+    list[0].checked = false;
+    list[2].checked = false;
+  }run()
+}
+
+// This function allows only one of the three options of "Expertise Level" to be selected in criteria page.
+function toggle12(){
+  var list = document.getElementsByClassName("expertise");
+  if(list[2].checked == true){
+    list[0].checked = false;
+    list[1].checked = false;
+  }run()
+}
+
 // This function sets the box colour when clicked on all skill selection pages.
 function skillCheck(){
   var boxes = document.getElementsByClassName("skillbox");
