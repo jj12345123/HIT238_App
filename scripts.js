@@ -1230,6 +1230,7 @@ function loadResults(){
   for (i = 0; i < person.length; i++){
     var allSkills = person[i].teams;
     allSkills += person[i].organisationalskills;
+    allSkills += person[i].expertise;
     allSkills += person[i].level;
     allSkills += person[i].availability;
 
