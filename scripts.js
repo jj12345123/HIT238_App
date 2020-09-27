@@ -1351,12 +1351,13 @@ function loadResults(){
           parentdiv.setAttribute("class", "parentdiv");
           let div = document.createElement('div');
           div.setAttribute("class", "result");
-          let result = document.createElement('h2');
+          let result = document.createElement('button');
           result.setAttribute("class", "resultText");
           var name = person[i].name + "<br>";
           var phone = person[i].phone + "<br>";
           var email =  person[i].email + "<br>";
-          result.innerHTML = name + phone + email;
+          result.innerHTML = name;
+          result.onclick = show;
           let back = document.createElement('div');
           back.setAttribute("class", "backresult");
           let backresult= document.createElement('h2');
@@ -1366,7 +1367,6 @@ function loadResults(){
           div.appendChild(result);
           back.appendChild(backresult);
           parentdiv.appendChild(div);
-          parentdiv.appendChild(back);
 
 
           document.body.appendChild(parentdiv);
@@ -1404,4 +1404,21 @@ card.addEventListener( 'click', function() {
 // function that tkes user to the home page
 function newSearch(){
   window.location.href = "index.html";
+}
+
+function show(){
+  element = event.srcElement.innerHTML;
+  var areaList = sessionStorage.getItem("area", areaList);
+  for (i = 0; i < person.length; i++){
+    var details = person[i].name + "<br>" + person[i].phone + "<br>" + person[i].email;
+    if (person[i].area == areaList && person[i].name.includes(element.substring(0,6)) && element == details){
+      var name = person[i].name;
+      event.srcElement.innerHTML = name;
+    }else if(person[i].area == areaList && person[i].name.includes(element.substring(0,6))){
+      var name = person[i].name + "<br>";
+      var phone = person[i].phone + "<br>";
+      var email =  person[i].email;
+      event.srcElement.innerHTML = name + phone + email;
+    }
+  }
 }
