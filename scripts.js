@@ -1353,11 +1353,15 @@ function loadResults(){
           div.setAttribute("class", "result");
           let result = document.createElement('h2');
           result.setAttribute("class", "resultText");
-          result.textContent = person[i].name;
+          var name = person[i].name + "<br>";
+          var phone = person[i].phone + "<br>";
+          var email =  person[i].email + "<br>";
+          result.innerHTML = name + phone + email;
           let back = document.createElement('div');
           back.setAttribute("class", "backresult");
           let backresult= document.createElement('h2');
-          backresult.textContent = person[i].phone + '\n' + person[i].email;
+          backresult.setAttribute("class", "resultText");
+          backresult.innerHTML = phone + email;
           backresult.setAttribute("class", "backresulttext");
           div.appendChild(result);
           back.appendChild(backresult);
