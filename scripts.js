@@ -1429,6 +1429,7 @@ function loadResults(){
     allSkills += person[i].expertise;
     allSkills += person[i].gpa;
     allSkills += person[i].level;
+    allSkills += person[i].communication;
     allSkills += person[i].availability;
 
 
