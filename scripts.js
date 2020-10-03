@@ -1391,9 +1391,27 @@ function skillCheck(){
 function move(){
   var criteriaList = [];
   var teamsList = [];
+  var expersiteList = [];
+  var gpaList = [];
+  var organisationalList = [];
+  var yearList = [];
+  var communicationList = [];
+  var availabilityList = [];
   var criteria = document.getElementsByClassName('criteriabox');
   var teams = document.getElementsByClassName('teams');
   var teamsLabel = document.getElementsByClassName('teamsLabel');
+  var expertises = document.getElementsByClassName('expertise');
+  var expertisesLabel = document.getElementsByClassName('expertiseLabel');
+  var gpas = document.getElementsByClassName('gpa');
+  var gpasLabel = document.getElementsByClassName('gpaLabel');
+  var organisationals = document.getElementsByClassName('organisational');
+  var organisationalsLabel = document.getElementsByClassName('organisationalLabel');
+  var years = document.getElementsByClassName('yearlevel');
+  var yearsLabel = document.getElementsByClassName('yearLabel');
+  var communications = document.getElementsByClassName('communicationMethods');
+  var communicationsLabel = document.getElementsByClassName('communicationLabel');
+  var availabilitys = document.getElementsByClassName('availability');
+  var availabilitysLabel = document.getElementsByClassName('availabilityLabel');
   for (i = 0; i < criteria.length; i++){
     if(criteria[i].checked == true){
       criteriaList.push(criteria[i].name);
@@ -1404,8 +1422,44 @@ function move(){
       teamsList.push(teamsLabel[i].innerText);
     }
   }
+  for (i = 0; i < expertises.length; i++){
+    if(expertises[i].checked == true){
+      expersiteList.push(expertisesLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < gpas.length; i++){
+    if(gpas[i].checked == true){
+      gpaList.push(gpasLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < organisationals.length; i++){
+    if(organisationals[i].checked == true){
+      organisationalList.push(organisationalsLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < years.length; i++){
+    if(years[i].checked == true){
+      yearList.push(yearsLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < communications.length; i++){
+    if(communications[i].checked == true){
+      communicationList.push(communicationsLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < availabilitys.length; i++){
+    if(availabilitys[i].checked == true){
+      availabilityList.push(availabilitysLabel[i].innerText);
+    }
+  }
   sessionStorage.setItem("criteria", criteriaList);
   sessionStorage.setItem("teams", teamsList);
+  sessionStorage.setItem("expersises", expersiteList);
+  sessionStorage.setItem("gpas", gpaList);
+  sessionStorage.setItem("organisationals", organisationalList);
+  sessionStorage.setItem("years", yearList);
+  sessionStorage.setItem("communications", communicationList);
+  sessionStorage.setItem("availabilitys", availabilityList);
   var areaList = sessionStorage.getItem("area", areaList);
   areaList += ".html"
   window.location.href = areaList;
