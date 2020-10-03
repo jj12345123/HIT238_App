@@ -1194,13 +1194,17 @@ const person = [
 // This function records the area user selects and pushes it to session storage, as well as takes user to criteria page.
 function areaCheck(){
   var areaList = [];
+  var areaText = [];
   var areas = document.getElementsByClassName("areabox");
+  var label = document.getElementsByClassName("checklabel");
   for (i = 0; i < areas.length; i++){
     if(areas[i].checked == true){
       areaList.push(areas[i].name);
+      areaText.push(label[i].innerText);
     }
   }
   sessionStorage.setItem("area", areaList);
+  sessionStorage.setItem("areaBox", areaText);
   window.location.href = "criteria.html";
 }
 
@@ -1386,13 +1390,22 @@ function skillCheck(){
 // This function takes user from criteria page to skill page based on the area the user selected in the first page.
 function move(){
   var criteriaList = [];
+  var teamsList = [];
   var criteria = document.getElementsByClassName('criteriabox');
+  var teams = document.getElementsByClassName('teams');
+  var teamsLabel = document.getElementsByClassName('teamsLabel');
   for (i = 0; i < criteria.length; i++){
     if(criteria[i].checked == true){
       criteriaList.push(criteria[i].name);
     }
   }
+  for (i = 0; i < teams.length; i++){
+    if(teams[i].checked == true){
+      teamsList.push(teamsLabel[i].innerText);
+    }
+  }
   sessionStorage.setItem("criteria", criteriaList);
+  sessionStorage.setItem("teams", teamsList);
   var areaList = sessionStorage.getItem("area", areaList);
   areaList += ".html"
   window.location.href = areaList;
@@ -1411,6 +1424,21 @@ function resultsCheck(){
   window.location.href = "results.html";
 }
 
+function selectedCriteria(){
+  var areaText = sessionStorage.getItem("areaBox", areaText);
+  var teamsList = sessionStorage.getItem("teams", teamsList);
+  var areaBox = "Selected area: " + areaText + "<br/>";
+  var teamsBox = "Number of Teams Worked With: " + teamsList + "<br/>";
+  let divContent = document.createElement('div');
+  let resultContent = document.createElement('h3');
+  resultContent.innerHTML = "Selected criteria for your search result: " + "<br/>" + "<br/>";
+  resultContent.innerHTML += areaBox;
+  resultContent.innerHTML += teamsBox;
+  divContent.appendChild(resultContent);
+  document.body.appendChild(divContent);
+}
+
+
 // This code loads the results on the results page.
 // The code retrieves the user selections from session sessionStorage.
 // Based on the match on the skills and criteria, results will presented on the screen.
@@ -1420,6 +1448,7 @@ function loadResults(){
   var areaList = sessionStorage.getItem("area", areaList);
   var criteriaList = sessionStorage.getItem("criteria", criteriaList);
   var splitCriteriaList = criteriaList.split(",");
+  selectedCriteria();
   var count = 0;
 
   // Run a loop to check if any matches for selected criteria and skills.
@@ -1488,16 +1517,12 @@ function loadResults(){
       document.body.appendChild(btn);
 }
 
-var card = document.querySelector('.parentdiv');
-card.addEventListener( 'click', function() {
-  card.classList.toggle('is-flipped');
-});
-
-// function that tkes user to the home page
+// function that takes user to the home page
 function newSearch(){
   window.location.href = "index.html";
 }
 
+// function that shows people's contact details on the results page when clicking on the name
 function show(){
   element = event.srcElement.innerHTML;
   var areaList = sessionStorage.getItem("area", areaList);
