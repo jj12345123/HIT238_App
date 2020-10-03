@@ -1454,7 +1454,7 @@ function move(){
   }
   sessionStorage.setItem("criteria", criteriaList);
   sessionStorage.setItem("teams", teamsList);
-  sessionStorage.setItem("expersises", expersiteList);
+  sessionStorage.setItem("expertises", expersiteList);
   sessionStorage.setItem("gpas", gpaList);
   sessionStorage.setItem("organisationals", organisationalList);
   sessionStorage.setItem("years", yearList);
@@ -1478,16 +1478,35 @@ function resultsCheck(){
   window.location.href = "results.html";
 }
 
+// This function captures the text in the buttons that user presses and moves to sessionStorage
 function selectedCriteria(){
   var areaText = sessionStorage.getItem("areaBox", areaText);
   var teamsList = sessionStorage.getItem("teams", teamsList);
+  var expertiseList = sessionStorage.getItem("expertises", expertiseList);
+  var gpaList = sessionStorage.getItem("gpas", gpaList);
+  var organisationalList = sessionStorage.getItem("organisationals", organisationalList);
+  var yearList = sessionStorage.getItem("years", yearList);
+  var communicationList = sessionStorage.getItem("communications", communicationList);
+  var availabilityList = sessionStorage.getItem("availabilitys", availabilityList);
   var areaBox = "Selected area: " + areaText + "<br/>";
   var teamsBox = "Number of Teams Worked With: " + teamsList + "<br/>";
+  var expertiseBox = "Expersite Level: " + expertiseList + "<br/>";
+  var gpaBox = "GPA: " + gpaList + "<br/>";
+  var organisationalBox = "Organisational Skills: " + organisationalList + "<br/>";
+  var yearBox = "Year Level: " + yearList + "<br/>";
+  var communicationBox = "Communication Methods: " + communicationList + "<br/>";
+  var availabilityBox = "Availability: " + availabilityList + "<br/>";
   let divContent = document.createElement('div');
   let resultContent = document.createElement('h3');
   resultContent.innerHTML = "Selected criteria for your search result: " + "<br/>" + "<br/>";
   resultContent.innerHTML += areaBox;
   resultContent.innerHTML += teamsBox;
+  resultContent.innerHTML += expertiseBox;
+  resultContent.innerHTML += gpaBox;
+  resultContent.innerHTML += organisationalBox;
+  resultContent.innerHTML += yearBox;
+  resultContent.innerHTML += communicationBox;
+  resultContent.innerHTML += availabilityBox;
   divContent.appendChild(resultContent);
   document.body.appendChild(divContent);
 }
