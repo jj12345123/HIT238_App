@@ -1598,7 +1598,7 @@ function selectedCriteria(){
   var yearBox = "Year Level: " + yearList + "<br/>";
   var communicationBox = "Communication Methods: " + communicationList + "<br/>";
   var availabilityBox = "Availability: " + availabilityList + "<br/>";
-  var skillBox = "Selected skills: " + selectedSkills + "<br/>";
+  var skillBox = "Selected skills: " + selectedSkills  + "<br/>" + "<br/>";
 
   let divContent = document.createElement('div');
   let resultContent = document.createElement('h3');
@@ -1626,8 +1626,9 @@ function selectedCriteria(){
     availabilityBox = "Availability: NA" + "<br/>";
   }
   if (selectedSkills == []){
-    skillBox = "Selected Skills: NA" + "<br/>";
+    skillBox = "Selected Skills: NA" + "<br/>" + "<br/>";
   }
+  resultContent.innerHTML += skillBox;
   resultContent.innerHTML += teamsBox;
   resultContent.innerHTML += expertiseBox;
   resultContent.innerHTML += gpaBox;
@@ -1635,7 +1636,6 @@ function selectedCriteria(){
   resultContent.innerHTML += yearBox;
   resultContent.innerHTML += communicationBox;
   resultContent.innerHTML += availabilityBox;
-  resultContent.innerHTML += skillBox;
   divContent.appendChild(resultContent);
   document.body.appendChild(divContent);
 }
