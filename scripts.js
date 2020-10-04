@@ -1589,6 +1589,7 @@ function selectedCriteria(){
   var yearList = sessionStorage.getItem("years", yearList);
   var communicationList = sessionStorage.getItem("communications", communicationList);
   var availabilityList = sessionStorage.getItem("availabilitys", availabilityList);
+  var selectedSkills = sessionStorage.getItem("skillSelected", selectedSkills);
   var areaBox = "Selected area: " + areaText + "<br/>";
   var teamsBox = "Number of Teams Worked With: " + teamsList + "<br/>";
   var expertiseBox = "Expersite Level: " + expertiseList + "<br/>";
@@ -1597,6 +1598,7 @@ function selectedCriteria(){
   var yearBox = "Year Level: " + yearList + "<br/>";
   var communicationBox = "Communication Methods: " + communicationList + "<br/>";
   var availabilityBox = "Availability: " + availabilityList + "<br/>";
+  var skillBox = "Selected skills: " + selectedSkills + "<br/>";
 
   let divContent = document.createElement('div');
   let resultContent = document.createElement('h3');
@@ -1623,6 +1625,9 @@ function selectedCriteria(){
   if (availabilityList == []){
     availabilityBox = "Availability: NA" + "<br/>";
   }
+  if (selectedSkills == []){
+    skillBox = "Selected Skills: NA" + "<br/>";
+  }
   resultContent.innerHTML += teamsBox;
   resultContent.innerHTML += expertiseBox;
   resultContent.innerHTML += gpaBox;
@@ -1630,6 +1635,7 @@ function selectedCriteria(){
   resultContent.innerHTML += yearBox;
   resultContent.innerHTML += communicationBox;
   resultContent.innerHTML += availabilityBox;
+  resultContent.innerHTML += skillBox;
   divContent.appendChild(resultContent);
   document.body.appendChild(divContent);
 }
