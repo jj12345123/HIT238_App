@@ -1505,72 +1505,72 @@ function resultsCheck(){
   }
   for (i = 0; i < it.length; i++){
     if(it[i].checked == true){
-      selectedSkills.push(itLabel[i].innerText);
+      selectedSkills.push(" " + itLabel[i].innerText);
     }
   }
   for (i = 0; i < engineering.length; i++){
     if(engineering[i].checked == true){
-      selectedSkills.push(engineeringLabel[i].innerText);
+      selectedSkills.push(" " + engineeringLabel[i].innerText);
     }
   }
   for (i = 0; i < environment.length; i++){
     if(environment[i].checked == true){
-      selectedSkills.push(environmentLabel[i].innerText);
+      selectedSkills.push(" " + environmentLabel[i].innerText);
     }
   }
   for (i = 0; i < marketing.length; i++){
     if(marketing[i].checked == true){
-      selectedSkills.push(marketingLabel[i].innerText);
+      selectedSkills.push(" " + marketingLabel[i].innerText);
     }
   }
   for (i = 0; i < finance.length; i++){
     if(finance[i].checked == true){
-      selectedSkills.push(financeLabel[i].innerText);
+      selectedSkills.push(" " + financeLabel[i].innerText);
     }
   }
   for (i = 0; i < management.length; i++){
     if(management[i].checked == true){
-      selectedSkills.push(managementLabel[i].innerText);
+      selectedSkills.push(" " + managementLabel[i].innerText);
     }
   }
   for (i = 0; i < health.length; i++){
     if(health[i].checked == true){
-      selectedSkills.push(healthLabel[i].innerText);
+      selectedSkills.push(" " + healthLabel[i].innerText);
     }
   }
   for (i = 0; i < medicine.length; i++){
     if(medicine[i].checked == true){
-      selectedSkills.push(medicineLabel[i].innerText);
+      selectedSkills.push(" " + medicineLabel[i].innerText);
     }
   }
   for (i = 0; i < logistics.length; i++){
     if(logistics[i].checked == true){
-      selectedSkills.push(logisticsLabel[i].innerText);
+      selectedSkills.push(" " + logisticsLabel[i].innerText);
     }
   }
   for (i = 0; i < psychology.length; i++){
     if(psychology[i].checked == true){
-      selectedSkills.push(psychologyLabel[i].innerText);
+      selectedSkills.push(" " + psychologyLabel[i].innerText);
     }
   }
   for (i = 0; i < architecture.length; i++){
     if(architecture[i].checked == true){
-      selectedSkills.push(architectureLabel[i].innerText);
+      selectedSkills.push(" " + architectureLabel[i].innerText);
     }
   }
   for (i = 0; i < crm.length; i++){
     if(crm[i].checked == true){
-      selectedSkills.push(crmLabel[i].innerText);
+      selectedSkills.push( " " + crmLabel[i].innerText);
     }
   }
   for (i = 0; i < physics.length; i++){
     if(physics[i].checked == true){
-      selectedSkills.push(physicsLabel[i].innerText);
+      selectedSkills.push( " " + physicsLabel[i].innerText);
     }
   }
   for (i = 0; i < arts.length; i++){
     if(arts[i].checked == true){
-      selectedSkills.push(artsLabel[i].innerText);
+      selectedSkills.push(" " + artsLabel[i].innerText);
     }
   }
   sessionStorage.setItem("skill", skillList);
