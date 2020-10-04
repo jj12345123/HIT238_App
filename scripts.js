@@ -1580,7 +1580,7 @@ function resultsCheck(){
 
 // This function captures the text in the buttons that user presses and moves to sessionStorage
 function selectedCriteria(){
-  // brings selected criteria information from criterias page
+  // brings selected criteria information from criterias and skills pages
   var areaText = sessionStorage.getItem("areaBox", areaText);
   var teamsList = sessionStorage.getItem("teams", teamsList);
   var expertiseList = sessionStorage.getItem("expertises", expertiseList);
