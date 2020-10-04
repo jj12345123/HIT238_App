@@ -1468,20 +1468,7 @@ function move(){
 // This function records user selected skills to session storage and takes user to results page.
 function resultsCheck(){
   var skillList = [];
-  var itSkills = [];
-  var engineeringSkills = [];
-  var environmentSkills = [];
-  var marketingSkills = [];
-  var financeSkills = [];
-  var managementSkills = [];
-  var healthSkills = [];
-  var medicineSkills = [];
-  var logisticsSkills = [];
-  var psychologySkills = [];
-  var architectureSkills = [];
-  var crmSkills = [];
-  var physicsSkills = [];
-  var artsSkills = [];
+  var selectedSkills = [];
   var skills = document.getElementsByClassName('skillbox');
   var it = document.getElementsByClassName('itSkill');
   var itLabel = document.getElementsByClassName('itLabel');
@@ -1518,93 +1505,82 @@ function resultsCheck(){
   }
   for (i = 0; i < it.length; i++){
     if(it[i].checked == true){
-      itkills.push(itLabel[i].innerText);
+      selectedSkills.push(itLabel[i].innerText);
     }
   }
   for (i = 0; i < engineering.length; i++){
     if(engineering[i].checked == true){
-      engineeringSkills.push(engineeringLabel[i].innerText);
+      selectedSkills.push(engineeringLabel[i].innerText);
     }
   }
   for (i = 0; i < environment.length; i++){
     if(environment[i].checked == true){
-      environmentSkills.push(environmentLabel[i].innerText);
+      selectedSkills.push(environmentLabel[i].innerText);
     }
   }
   for (i = 0; i < marketing.length; i++){
     if(marketing[i].checked == true){
-      marketingSkills.push(marketingLabel[i].innerText);
+      selectedSkills.push(marketingLabel[i].innerText);
     }
   }
   for (i = 0; i < finance.length; i++){
     if(finance[i].checked == true){
-      financeSkills.push(financeLabel[i].innerText);
+      selectedSkills.push(financeLabel[i].innerText);
     }
   }
   for (i = 0; i < management.length; i++){
     if(management[i].checked == true){
-      managementSkills.push(managementLabel[i].innerText);
+      selectedSkills.push(managementLabel[i].innerText);
     }
   }
   for (i = 0; i < health.length; i++){
     if(health[i].checked == true){
-      healthSkills.push(healthLabel[i].innerText);
+      selectedSkills.push(healthLabel[i].innerText);
     }
   }
   for (i = 0; i < medicine.length; i++){
     if(medicine[i].checked == true){
-      medicineSkills.push(medicineLabel[i].innerText);
+      selectedSkills.push(medicineLabel[i].innerText);
     }
   }
   for (i = 0; i < logistics.length; i++){
     if(logistics[i].checked == true){
-      logisticsSkills.push(logisticsLabel[i].innerText);
+      selectedSkills.push(logisticsLabel[i].innerText);
     }
   }
   for (i = 0; i < psychology.length; i++){
     if(psychology[i].checked == true){
-      psychologySkills.push(psychologyLabel[i].innerText);
+      selectedSkills.push(psychologyLabel[i].innerText);
     }
   }
   for (i = 0; i < architecture.length; i++){
     if(architecture[i].checked == true){
-      architectureSkills.push(architectureLabel[i].innerText);
+      selectedSkills.push(architectureLabel[i].innerText);
     }
   }
   for (i = 0; i < crm.length; i++){
     if(crm[i].checked == true){
-      crmSkills.push(crmLabel[i].innerText);
+      selectedSkills.push(crmLabel[i].innerText);
     }
   }
   for (i = 0; i < physics.length; i++){
     if(physics[i].checked == true){
-      physicsSkills.push(physicsLabel[i].innerText);
+      selectedSkills.push(physicsLabel[i].innerText);
     }
   }
   for (i = 0; i < arts.length; i++){
     if(arts[i].checked == true){
-      artsSkills.push(artsLabel[i].innerText);
+      selectedSkills.push(artsLabel[i].innerText);
     }
   }
   sessionStorage.setItem("skill", skillList);
-  sessionStorage.setItem("engineering", engineeringSkills);
-  sessionStorage.setItem("environment", environmentSkills);
-  sessionStorage.setItem("marketing", marketingSkills);
-  sessionStorage.setItem("finance", financeSkills);
-  sessionStorage.setItem("management", managementSkills);
-  sessionStorage.setItem("health", healthSkills);
-  sessionStorage.setItem("medicine", medicineSkills);
-  sessionStorage.setItem("logistics", logisticsSkills);
-  sessionStorage.setItem("psychology", psychologySkills);
-  sessionStorage.setItem("architecture", architectureSkills);
-  sessionStorage.setItem("crm", crmSkills);
-  sessionStorage.setItem("physics", physicsSkills);
-  sessionStorage.setItem("arts", artsSkills);
+  sessionStorage.setItem("skillSelected", selectedSkills);
   window.location.href = "results.html";
 }
 
 // This function captures the text in the buttons that user presses and moves to sessionStorage
 function selectedCriteria(){
+  // brings selected criteria information from criterias page
   var areaText = sessionStorage.getItem("areaBox", areaText);
   var teamsList = sessionStorage.getItem("teams", teamsList);
   var expertiseList = sessionStorage.getItem("expertises", expertiseList);
@@ -1621,6 +1597,7 @@ function selectedCriteria(){
   var yearBox = "Year Level: " + yearList + "<br/>";
   var communicationBox = "Communication Methods: " + communicationList + "<br/>";
   var availabilityBox = "Availability: " + availabilityList + "<br/>";
+
   let divContent = document.createElement('div');
   let resultContent = document.createElement('h3');
   resultContent.innerHTML = "Selected criteria for your search result: " + "<br/>" + "<br/>";
