@@ -1468,13 +1468,138 @@ function move(){
 // This function records user selected skills to session storage and takes user to results page.
 function resultsCheck(){
   var skillList = [];
+  var itSkills = [];
+  var engineeringSkills = [];
+  var environmentSkills = [];
+  var marketingSkills = [];
+  var financeSkills = [];
+  var managementSkills = [];
+  var healthSkills = [];
+  var medicineSkills = [];
+  var logisticsSkills = [];
+  var psychologySkills = [];
+  var architectureSkills = [];
+  var crmSkills = [];
+  var physicsSkills = [];
+  var artsSkills = [];
   var skills = document.getElementsByClassName('skillbox');
+  var it = document.getElementsByClassName('itSkill');
+  var itLabel = document.getElementsByClassName('itLabel');
+  var engineering = document.getElementsByClassName('engineeringSkill');
+  var engineeringLabel = document.getElementsByClassName('engineeringLabel');
+  var environment = document.getElementsByClassName('environmentSkill');
+  var environmentLabel = document.getElementsByClassName('environmentLabel');
+  var marketing = document.getElementsByClassName('marketingSkill');
+  var marketingLabel = document.getElementsByClassName('marketingLabel');
+  var finance = document.getElementsByClassName('financeSkill');
+  var financeLabel = document.getElementsByClassName('financeLabel');
+  var management = document.getElementsByClassName('managementSkill');
+  var managementLabel = document.getElementsByClassName('managementLabel');
+  var health = document.getElementsByClassName('healthSkill');
+  var healthLabel = document.getElementsByClassName('healthLabel');
+  var medicine = document.getElementsByClassName('medicineSkill');
+  var medicineLabel = document.getElementsByClassName('medicineLabel');
+  var logistics = document.getElementsByClassName('logisticsSkill');
+  var logisticsLabel = document.getElementsByClassName('logisticsLabel');
+  var psychology = document.getElementsByClassName('psychologySkill');
+  var psychologyLabel = document.getElementsByClassName('psychologyLabel');
+  var architecture = document.getElementsByClassName('architectureSkill');
+  var architectureLabel = document.getElementsByClassName('architectureLabel');
+  var crm = document.getElementsByClassName('crmSkill');
+  var crmLabel = document.getElementsByClassName('crmLabel');
+  var physics = document.getElementsByClassName('physicsSkill');
+  var physicsLabel = document.getElementsByClassName('physicsLabel');
+  var arts = document.getElementsByClassName('artsSkill');
+  var artsLabel = document.getElementsByClassName('artsLabel');
   for (i = 0; i < skills.length; i++){
     if(skills[i].checked == true){
       skillList.push(skills[i].name);
     }
   }
+  for (i = 0; i < it.length; i++){
+    if(it[i].checked == true){
+      itkills.push(itLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < engineering.length; i++){
+    if(engineering[i].checked == true){
+      engineeringSkills.push(engineeringLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < environment.length; i++){
+    if(environment[i].checked == true){
+      environmentSkills.push(environmentLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < marketing.length; i++){
+    if(marketing[i].checked == true){
+      marketingSkills.push(marketingLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < finance.length; i++){
+    if(finance[i].checked == true){
+      financeSkills.push(financeLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < management.length; i++){
+    if(management[i].checked == true){
+      managementSkills.push(managementLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < health.length; i++){
+    if(health[i].checked == true){
+      healthSkills.push(healthLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < medicine.length; i++){
+    if(medicine[i].checked == true){
+      medicineSkills.push(medicineLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < logistics.length; i++){
+    if(logistics[i].checked == true){
+      logisticsSkills.push(logisticsLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < psychology.length; i++){
+    if(psychology[i].checked == true){
+      psychologySkills.push(psychologyLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < architecture.length; i++){
+    if(architecture[i].checked == true){
+      architectureSkills.push(architectureLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < crm.length; i++){
+    if(crm[i].checked == true){
+      crmSkills.push(crmLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < physics.length; i++){
+    if(physics[i].checked == true){
+      physicsSkills.push(physicsLabel[i].innerText);
+    }
+  }
+  for (i = 0; i < arts.length; i++){
+    if(arts[i].checked == true){
+      artsSkills.push(artsLabel[i].innerText);
+    }
+  }
   sessionStorage.setItem("skill", skillList);
+  sessionStorage.setItem("engineering", engineeringSkills);
+  sessionStorage.setItem("environment", environmentSkills);
+  sessionStorage.setItem("marketing", marketingSkills);
+  sessionStorage.setItem("finance", financeSkills);
+  sessionStorage.setItem("management", managementSkills);
+  sessionStorage.setItem("health", healthSkills);
+  sessionStorage.setItem("medicine", medicineSkills);
+  sessionStorage.setItem("logistics", logisticsSkills);
+  sessionStorage.setItem("psychology", psychologySkills);
+  sessionStorage.setItem("architecture", architectureSkills);
+  sessionStorage.setItem("crm", crmSkills);
+  sessionStorage.setItem("physics", physicsSkills);
+  sessionStorage.setItem("arts", artsSkills);
   window.location.href = "results.html";
 }
 
