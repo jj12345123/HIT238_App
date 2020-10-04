@@ -1500,6 +1500,27 @@ function selectedCriteria(){
   let resultContent = document.createElement('h3');
   resultContent.innerHTML = "Selected criteria for your search result: " + "<br/>" + "<br/>";
   resultContent.innerHTML += areaBox;
+  if (teamsList == []){
+    teamsBox = "Number of Teams Worked With: NA" + "<br/>";
+  }
+  if (expertiseList == []){
+    expertiseBox = "Expersite Level: NA" + "<br/>";
+  }
+  if (gpaList == []){
+    gpaBox = "GPA: NA" + "<br/>";
+  }
+  if (organisationalList == []){
+    organisationalBox = "Organisational Skills: NA" + "<br/>";
+  }
+  if (yearList == []){
+    yearBox = "Year Level: NA" + "<br/>";
+  }
+  if (communicationList == []){
+    communicationBox = "Communication Methods: NA" + "<br/>";
+  }
+  if (availabilityList == []){
+    availabilityBox = "Availability: NA" + "<br/>";
+  }
   resultContent.innerHTML += teamsBox;
   resultContent.innerHTML += expertiseBox;
   resultContent.innerHTML += gpaBox;
