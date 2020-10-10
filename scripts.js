@@ -1693,10 +1693,10 @@ function loadResults(){
 
 
           document.body.appendChild(parentdiv);
-          div.style.textAlign = "center";
-          div.style.border = "thick solid none ";
-          div.style.margin = "2% 10% 2% 10%";}
-
+          parentdiv.style.textAlign = "center";
+          parentdiv.style.border = "none ";
+          parentdiv.style.width = "80%";
+          parentdiv.style.margin = "2% 10% 2% 10%";}
 
     // If there are no results to show, this code will run and display the message of no results to user
     }if(count < 1){
