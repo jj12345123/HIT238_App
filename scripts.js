@@ -1601,6 +1601,10 @@ function selectedCriteria(){
   var skillBox = "Selected skills: " + selectedSkills  + "<br/>" + "<br/>";
 
   let divContent = document.createElement('div');
+  divContent.style.backgroundColor = "#f0f0f0";
+  divContent.style.width = "95%";
+  divContent.style.marginLeft = "2.5%";
+  divContent.style.borderRadius = "5%"
   let resultContent = document.createElement('h3');
   resultContent.innerHTML = "Selected criteria for your search result: " + "<br/>" + "<br/>";
   resultContent.innerHTML += areaBox;
