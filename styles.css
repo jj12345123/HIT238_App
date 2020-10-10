@@ -83,7 +83,7 @@ h3{
 .checklabel,
 .resultslabel {
   display:block;
-  background-color:rgb(1, 179, 96);
+  background-color:#ada397;
   border-radius: 2rem;
   border-style: none;
   color: rgb(230,230,230);
@@ -94,7 +94,6 @@ h3{
 
 /* Sets background color for results button */
 .resultslabel{
-  background-color: orange;
   height: 150px;
 }
 
@@ -110,14 +109,20 @@ h3{
 	outline:0;
 }
 
-button{
+button,
+.newsearch{
   font-size: 400%;
   padding: 20px;
   width: 100%;
-  background-color: orange;
+  background-color: #80ced6;
   color: white;
   border-radius: 2rem;
   border-style: none;
+}
+
+.newsearch,
+.resultslabel{
+  background-color: #618685;
 }
 
 .parentdiv{
