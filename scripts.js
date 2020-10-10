@@ -1214,9 +1214,9 @@ function run(){
   var classes = document.getElementsByClassName("checklabel");
   for (i = 0; i < boxes.length; i++){
     if(boxes[i].checked == true){
-      classes[i].style.backgroundColor = "#0000FF";
+      classes[i].style.backgroundColor = "#3e4444";
     }else{
-      classes[i].style.backgroundColor = "rgb(1, 179, 96)";
+      classes[i].style.backgroundColor = "#ada397";
     }
   }
 }
@@ -1380,9 +1380,9 @@ function skillCheck(){
   var classes = document.getElementsByClassName("checklabel");
   for (i = 0; i < boxes.length; i++){
     if(boxes[i].checked == true){
-      classes[i].style.backgroundColor = "#0000FF";
+      classes[i].style.backgroundColor = "#3e4444";
     }else{
-      classes[i].style.backgroundColor = "rgb(1, 179, 96)";
+      classes[i].style.backgroundColor = "#ada397";
     }
   }
 }
