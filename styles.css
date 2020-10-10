@@ -109,6 +109,7 @@ h3{
 	outline:0;
 }
 
+/* Styling for buttons on the results page*/
 button,
 .newsearch{
   font-size: 400%;
@@ -120,6 +121,7 @@ button,
   border-style: none;
 }
 
+/* Background colour for the buttons that move user between pages*/
 .newsearch,
 .resultslabel{
   background-color: #618685;
