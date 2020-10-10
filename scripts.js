@@ -1718,6 +1718,7 @@ function loadResults(){
 
       // Button to take user to the beginning to do a new search
       var btn = document.createElement("button");
+      btn.setAttribute("class", "newsearch");
       btn.innerHTML = "New Search";
       btn.onclick = newSearch;
       document.body.appendChild(btn);
