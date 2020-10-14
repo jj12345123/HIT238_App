@@ -94,7 +94,8 @@ h3{
 
 /* Sets background color for results button */
 .resultslabel{
-  height: 150px;
+  height: 200px;
+  font-size: 380%;
 }
 
 /* Hides the checkbox icon box for all the buttons */
